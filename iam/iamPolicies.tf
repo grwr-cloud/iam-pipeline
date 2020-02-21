@@ -10,7 +10,7 @@ resource "aws_iam_policy" "s3Admin" {
   policy = "${file("./iam/policies/s3Admin.json")}"
 }
 
-resource "aws_iam_policy" "s3Admin2" {
+resource "aws_iam_policy" "s3Admin3" {
   name = "s3-admin-policy-2"
   path = "/"
   policy = "${file("./iam/policies/s3Admin.json")}"
