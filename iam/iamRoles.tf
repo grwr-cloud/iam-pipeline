@@ -1,21 +1,7 @@
 resource "aws_iam_role" "role" {
   name = "test-role"
 
-  assume_role_policy = <<EOF
-    {
-      "Version": "2012-10-17",
-      "Statement": [
-        {
-          "Action": "sts:AssumeRole",
-          "Principal": {
-            "Service": "ec2.amazonaws.com"
-          },
-          "Effect": "Allow",
-          "Sid": ""
-        }
-      ]
-    }
-EOF
+  assume_role_policy = "${file("./iam/policies/assumeRole.json")}"
 }
 
 resource "aws_iam_role_policy_attachment" "ec2Admin" {
