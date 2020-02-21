@@ -9,3 +9,33 @@ resource "aws_iam_policy" "s3Admin" {
   path = "/"
   policy = "${file("./iam/policies/s3Admin.json")}"
 }
+
+resource "aws_iam_policy" "ec2Admin" {
+  name = "ec2-admin-policy"
+  path = "/"
+  policy = "${file("./iam/policies/ec2Admin.json")}"
+}
+
+resource "aws_iam_policy" "ec2Admin2" {
+  name = "ec2-admin-policy2"
+  path = "/"
+  policy = "${file("./iam/policies/ec2Admin.json")}"
+}
+
+resource "aws_iam_policy" "ec2Admin3" {
+  name = "ec2-admin-policy3"
+  path = "/"
+  policy = "${file("./iam/policies/ec2Admin.json")}"
+}
+
+resource "aws_iam_policy" "ec2Admin4" {
+  name = "ec2-admin-policy4"
+  path = "/"
+  policy = "${file("./iam/policies/ec2Admin.json")}"
+}
+
+resource "aws_iam_policy" "ec2Admin5" {
+  name = "ec2-admin-policy"
+  path = "/"
+  policy = "${file("./iam/policies/ec2Admin.json")}"
+}
