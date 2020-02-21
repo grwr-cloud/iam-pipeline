@@ -9,7 +9,7 @@
  }
 
 
-module "dev" {
+module "cicd" {
   source = "./accounts/cicd"
 }
 
