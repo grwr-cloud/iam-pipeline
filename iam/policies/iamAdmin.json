@@ -3,7 +3,7 @@
     "Statement": [
       {
         "Action": "iam:*",
-        "Effect": "Deny",
+        "Effect": "Allow",
         "Resource": "*"
       }
     ]
