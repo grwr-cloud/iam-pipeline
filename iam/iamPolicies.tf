@@ -35,7 +35,7 @@ resource "aws_iam_policy" "ec2Admin4" {
 }
 
 resource "aws_iam_policy" "ec2Admin5" {
-  name = "ec2-admin-policy"
+  name = "ec2-admin-policy5"
   path = "/"
   policy = "${file("./iam/policies/ec2Admin.json")}"
 }
