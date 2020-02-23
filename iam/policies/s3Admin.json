@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
       {
-        "Action": "s3:*",
+        "Action": "s3:ListBuckets",
         "Effect": "Deny",
         "Resource": "*"
       }
