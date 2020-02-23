@@ -27,7 +27,7 @@ phases:
   pre_build:
     commands:
       - terraform init
-      - terraform plan --out tfplan.binary
+      - terraform plan -out=tfplan.binary
       - terraform show -json tfplan.binary > tfplan.json
       - aws s3 cp tfplan.json s3://grwr-terraform-lab-1/
 
